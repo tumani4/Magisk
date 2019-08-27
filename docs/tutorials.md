@@ -88,6 +88,8 @@ At this point, SafetyNet should be fully passed. Let's change gears to notorious
 - Disable USB debugging (ADB): some apps does not allow your device to have usb debugging enabled. Disable it in developer options.
 - Disable developer options: it's just ridiculous at this point.
 - Uninstall Magisk Manager: this is the last thing you should try. Sometimes the hiding technique used in Magisk Manager is just not good enough (it is improving, like recently added code obfuscation), try uninstalling and see if it works. If it does, report to me and I will hack up a solution ASAP.
-
+resetprop -v ro.build.fingerprint google/crosshatch/crosshatch:9/PQ3A.190801.002/5670241:user/release-keys
+resetprop ro.build.fingerprint
+getprop ro.build.fingerprint
 
 
